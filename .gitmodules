@@ -1,0 +1,6 @@
+[submodule "vim/bundle/Vundle"]
+	path = vim/bundle/Vundle
+	url = https://github.com/gmarik/Vundle.vim
+[submodule "fonts/FiraCode"]
+	path = fonts/FiraCode
+	url = https://github.com/tonsky/FiraCode.git
