@@ -23,6 +23,8 @@ cask 'slack'
 cask 'transmit'
 cask 'fantastical'
 cask 'xquartz'
+cask 'paw'
+cask 'tower'
 
 brew 'nmap'
 brew 'tmux'
