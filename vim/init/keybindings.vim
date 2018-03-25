@@ -43,7 +43,7 @@ nmap <F12> :w !ctags -R * --exclude=.git --exclude=node_modules<CR>
 
 
 " Wrap Args
-nnoremap <silent> <leader>a :ArgWrap<CR>
+nnoremap <silent> <leader>z :ArgWrap<CR>
 
 " clear search highlighting
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
@@ -56,8 +56,8 @@ vmap <leader>a :call AckVisual()<CR>
 " Bubble single lines
 nmap { [e
 nmap } ]e
-" Bubble multiple lines
 vmap { [egv
+" Bubble multiple lines
 vmap } ]egv
 
 " Run tests
