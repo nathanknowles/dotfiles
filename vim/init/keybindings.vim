@@ -41,6 +41,10 @@ imap <F2> <Esc>:set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 
 nmap <F12> :w !ctags -R * --exclude=.git --exclude=node_modules<CR>
 
+
+" Wrap Args
+nnoremap <silent> <leader>a :ArgWrap<CR>
+
 " clear search highlighting
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
