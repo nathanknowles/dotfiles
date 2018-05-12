@@ -10,6 +10,10 @@
 	<integer>1</integer>
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
+	<key>Coprocess MRU</key>
+	<array>
+		<string>/usr/local/bin/sudolikeaboss</string>
+	</array>
 	<key>Default Bookmark Guid</key>
 	<string>B7AFE9C1-DBE5-45CF-BE6F-16CF0B01A584</string>
 	<key>DimOnlyText</key>
@@ -79,11 +83,13 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 157 606 456 0 0 1440 900 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>470 366 918 401 0 0 1440 878 </string>
+	<string>644 191 1016 512 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>53 314 570 452 0 0 1440 878 </string>
+	<string>259 12 1193 866 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>387 276 650 452 0 0 1440 878 </string>
+	<string>387 290 650 451 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>197 48 650 451 0 0 1440 900 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -380,6 +386,13 @@
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x7f</string>
+				</dict>
+				<key>0x5c-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>35</integer>
+					<key>Text</key>
+					<string>/usr/local/bin/sudolikeaboss</string>
 				</dict>
 				<key>0xf700-0x220000</key>
 				<dict>
@@ -753,7 +766,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-12-04T17:51:46Z</date>
+	<date>2018-04-08T02:12:29Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
