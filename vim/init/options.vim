@@ -56,6 +56,7 @@
   set si            " smartindent
   set smarttab      " Use shiftwidth to tab at line beginning
   set cindent       " do c-style indenting
+  autocmd FileType html setlocal shiftwidth=2 tabstop=2
   set tabstop=2     " tab spacing (settings below are just to unify it)
   set softtabstop=2 " unify
   set shiftwidth=2  " unify
@@ -109,7 +110,7 @@
 
   if exists('+colorcolumn')
     hi ColorColumn guibg=#4b5263
-    set colorcolumn=128
+    set colorcolumn=80
   else
     au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>128v.\+', -1)
   endif
