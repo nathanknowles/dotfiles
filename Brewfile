@@ -27,6 +27,8 @@ cask 'paw'
 cask 'tower'
 
 brew 'nmap'
+brew 'ag'
+brew 'fzf'
 brew 'tmux'
 brew 'vim'
 brew 'macvim'

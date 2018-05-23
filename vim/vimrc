@@ -21,8 +21,10 @@ syntax on
 
 " Vundle stuff
 set rtp+=~/.vim/bundle/vundle/
+set rtp+=/usr/local/opt/fzf
 call vundle#rc()
 
+Plugin 'tobyS/vmustache'
 Plugin 'FooSoft/vim-argwrap'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'gmarik/vundle'
@@ -46,14 +48,16 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'vim-scripts/matchit.zip'
-Plugin 'kien/ctrlp.vim'
 Plugin 'benmills/vimux'
 Plugin 'rizzatti/dash.vim'
 
 " Snippets
-Plugin 'garbas/vim-snipmate.git'
+Plugin 'mattn/emmet-vim'
+Plugin 'SirVer/ultisnips'
 Plugin 'isRuslan/vim-es6'
-Plugin 'bag-man/snipmate-mocha'
+Plugin 'honza/vim-snippets'
+
+Plugin 'tobyS/pdv'
 
 Plugin 'shougo/deoplete.nvim'
 
@@ -61,6 +65,8 @@ if !has('nvim')
   Plugin 'roxma/nvim-yarp'
   Plugin 'roxma/vim-hug-neovim-rpc'
 endif
+
+Plugin 'junegunn/fzf.vim'
 
 filetype plugin indent on
 
