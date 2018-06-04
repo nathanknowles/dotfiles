@@ -51,7 +51,6 @@ Plugin 'vim-scripts/matchit.zip'
 Plugin 'benmills/vimux'
 Plugin 'rizzatti/dash.vim'
 
-Plugin 'phpactor/phpactor'
 " Snippets
 Plugin 'mattn/emmet-vim'
 Plugin 'SirVer/ultisnips'
