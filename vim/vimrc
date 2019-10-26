@@ -16,6 +16,7 @@
 " .vim/init, or create a new one.
 
 set nocompatible                " Don't maintain compatibility with vi
+set encoding=UTF-8
 filetype off
 syntax on
 
@@ -24,12 +25,20 @@ set rtp+=~/.vim/bundle/vundle/
 set rtp+=/usr/local/opt/fzf
 call vundle#rc()
 
+Plugin 'flrnd/candid.vim'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'jaxbot/semantic-highlight.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'zxqfl/tabnine-vim'
 Plugin 'tobyS/vmustache'
 Plugin 'FooSoft/vim-argwrap'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'gmarik/vundle'
 Plugin 'w0rp/ale'
 Plugin 'joshdick/onedark.vim'
+Plugin 'tyrannicaltoucan/vim-quantum'
+Plugin 'KeitaNakamura/neodark.vim'
 Plugin 'nelstrom/vim-qargs.git'
 Plugin 'tpope/vim-fugitive.git'
 Plugin 'tpope/vim-cucumber.git'
@@ -38,15 +47,14 @@ Plugin 'tpope/vim-endwise.git'
 Plugin 'tpope/vim-surround.git'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'scrooloose/nerdcommenter.git'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'mileszs/ack.vim.git'
 Plugin 'tpope/vim-repeat.git'
 Plugin 'plasticboy/vim-markdown.git'
 Plugin 'tpope/vim-unimpaired.git'
 Plugin 'godlygeek/tabular.git'
-Plugin 'ervandew/supertab.git'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
-Plugin 'itchyny/lightline.vim'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'benmills/vimux'
 Plugin 'rizzatti/dash.vim'
@@ -59,7 +67,8 @@ Plugin 'honza/vim-snippets'
 
 Plugin 'tobyS/pdv'
 
-Plugin 'shougo/deoplete.nvim'
+Plugin 'fatih/vim-go'
+Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 
 if !has('nvim')
   Plugin 'roxma/nvim-yarp'

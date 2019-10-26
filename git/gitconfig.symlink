@@ -1,8 +1,8 @@
 # This is Git's per-user configuration file.
 [user]
 # Please adapt and uncomment the following lines:
-    name = Nathan Knowles
-    email = nknowlesn@deseretdigital.com
+	name = Nathan Knowles
+	email = nknowles@deseretdigital.com
 
 # So much color
 [color]

@@ -20,7 +20,7 @@
   set viminfo+=!                 " make sure it can save viminfo
 
   set list                       " Show whitespace
-  set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+  set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:·
 
 " Visual Cues
   set showmatch                                      " show matching brackets
@@ -138,3 +138,10 @@
   au BufNewFile,BufRead *.ejs set filetype=html
   au BufNewFile,BufRead {Capfile,Gemfile,Rakefile,config.ru,.irbrc} set ft=ruby
 
+nmap <leader>sp :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc

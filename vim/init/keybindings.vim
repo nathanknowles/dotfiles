@@ -51,7 +51,7 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 " AckGrep current word
 map <leader>a :call AckGrep()<CR>
 " AckVisual current selection
-vmap <leader>a :call AckVisual()<CR>
+vmap <leader>a :call AckVisoual()<CR>
 
 " Bubble single lines
 nmap { [e
