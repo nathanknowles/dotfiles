@@ -5,6 +5,7 @@
   if !has("gui_vimr")
     set guifont=Fira\ Code:h12
   endif
+
   set guioptions-=T               " Remove GUI toolbar
   set guioptions-=e               " Use text tab bar, not GUI
   set guioptions-=rL              " Remove scrollbars
@@ -19,8 +20,8 @@
   filetype plugin on             " load filetype plugins
   set viminfo+=!                 " make sure it can save viminfo
 
-  set list                       " Show whitespace
-  set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:·
+  " set list                       " Show whitespace
+  set listchars=eol:¬,tab:<->,trail:~,extends:>,precedes:<,space:·
 
 " Visual Cues
   set showmatch                                      " show matching brackets
@@ -107,6 +108,9 @@
   set scrolloff=3                      " Scroll when the cursor is 3 lines from edge
   set cursorline                       " Highlight current line
   set laststatus=2                     " Always show statusline
+
+  let g:python3_host_prog="/usr/bin/python3"
+  let g:python_host_prog="/usr/bin/python"
 
   if exists('+colorcolumn')
     hi ColorColumn guibg=#4b5263

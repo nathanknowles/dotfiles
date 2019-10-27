@@ -1,7 +1,7 @@
 " Keybindings
 " -----------
-
-let mapleader = ","
+nnoremap <SPACE> <Nop>
+let mapleader = "\<Space>"
 let maplocalleader = ";"
 
 " Make Y consistent with D and C
@@ -38,6 +38,9 @@ nmap <F1> :.w !pbcopy<CR><CR>
 vmap <F1> :w !pbcopy<CR><CR>
 nmap <F2> :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 imap <F2> <Esc>:set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
+
+" F3: Toggle list (display unprintable characters).
+nnoremap <F3> :set list!<CR>
 
 nmap <F12> :w !ctags -R * --exclude=.git --exclude=node_modules<CR>
 

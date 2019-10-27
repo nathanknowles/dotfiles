@@ -30,6 +30,8 @@ Plugin 'ryanoasis/vim-devicons'
 Plugin 'jaxbot/semantic-highlight.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'rafi/awesome-vim-colorschemes'
+Plugin 'rainglow/vim'
 Plugin 'zxqfl/tabnine-vim'
 Plugin 'tobyS/vmustache'
 Plugin 'FooSoft/vim-argwrap'
@@ -68,6 +70,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'tobyS/pdv'
 
 Plugin 'fatih/vim-go'
+
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 
 if !has('nvim')
@@ -79,8 +82,15 @@ Plugin 'junegunn/fzf.vim'
 
 filetype plugin indent on
 
-let g:python2_host_prog = '/usr/local/bin/python'
-let g:python3_host_prog = '/usr/local/bin/python3'
+let g:python2_host_prog = '/usr/bin/python'
+let g:python3_host_prog = '/usr/bin/python3'
+
+function! SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
 
 " Source initialization files
 runtime! init/**.vim
