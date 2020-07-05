@@ -93,7 +93,7 @@
 " Vim UI
   set lsp=0                            " space it out a little more (easier to read)
   set ruler                            " Always show current positions along the bottom
-  set cmdheight=1                      " the command bar is 2 high
+  set cmdheight=4                      " the command bar is 2 high
   set number                           " turn on line numbers
   set numberwidth=3
   set cpoptions+=n                     " show wrapped lines in the line number gutter
@@ -150,8 +150,3 @@ function! <SID>SynStack()
   endif
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
-
-augroup highlight_yank
-    autocmd!
-    autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank("IncSearch", 1000)
-augroup END

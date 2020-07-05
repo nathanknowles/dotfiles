@@ -1,7 +1,8 @@
 " Keybindings
 " -----------
 nnoremap <SPACE> <Nop>
-let mapleader = "\<Space>"
+let mapleader = ","
+map <Space> <Leader>
 let maplocalleader = ";"
 
 " Make Y consistent with D and C
@@ -10,11 +11,6 @@ map Y           y$
 " Auto-indent whole file
 map <silent> <F8> mzgg=G'z :delmarks z<CR>:echo "Reformatted."<CR>
 
-" File tree browser
-map \           :NERDTreeToggle<CR>
-
-" File tree browser showing current file - pipe (shift-backslash)
-map \|          :NERDTreeFind<CR>
 
 " Find File/Buffer/Tag
 map <leader>F   :CtrlPClearCache<CR>:CtrlP<CR>
@@ -39,6 +35,12 @@ vmap <F1> :w !pbcopy<CR><CR>
 nmap <F2> :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 imap <F2> <Esc>:set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 
+noremap <Leader>y "*y
+noremap <Leader>p "*p
+noremap <Leader>Y "+y
+noremap <Leader>P "+p
+
+
 " F3: Toggle list (display unprintable characters).
 nnoremap <F3> :set list!<CR>
 
@@ -56,7 +58,7 @@ map <leader>a :call AckGrep()<CR>
 " AckVisual current selection
 vmap <leader>a :call AckVisoual()<CR>
 
-" Bubble single lines
+  " Bubble single lines
 nmap { [e
 nmap } ]e
 vmap { [egv
@@ -70,3 +72,14 @@ map <Leader>T :VroomRunTestFile<CR>
 " Horizontal block movement
 vmap > >gv
 vmap < <gv
+
+" function! InsertTabWrapper()
+    " let col = col('.') - 1
+    " if !col || getline('.')[col - 1] !~ '\k'
+        " return "\<tab>"
+    " else
+        " return "\<c-p>"
+    " endif
+" endfunction
+
+"inoremap <tab> <c-r>=InsertTabWrapper()<cr>

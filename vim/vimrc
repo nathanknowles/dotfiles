@@ -13,7 +13,8 @@
 "
 " Please do not add configuration to this file, unless it *really* needs to
 " come first or last, like vundle. Instead, add it to one of the files in
-" .vim/init, or create a new one.
+" .vim/init, or create a new one.let mapleader = ","
+
 
 set nocompatible                " Don't maintain compatibility with vi
 set encoding=UTF-8
@@ -63,7 +64,7 @@ Plugin 'rizzatti/dash.vim'
 
 " Snippets
 Plugin 'mattn/emmet-vim'
-Plugin 'SirVer/ultisnips'
+"Plugin 'SirVer/ultisnips'
 Plugin 'isRuslan/vim-es6'
 Plugin 'honza/vim-snippets'
 
@@ -72,6 +73,11 @@ Plugin 'tobyS/pdv'
 Plugin 'fatih/vim-go'
 
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+
+set wildmode=longest,list,full
+set wildmenu
+
+set completeopt=longest,menuone
 
 if !has('nvim')
   Plugin 'roxma/nvim-yarp'

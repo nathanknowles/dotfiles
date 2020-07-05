@@ -5,7 +5,7 @@ au FileType go set tabstop=4
 
 " disable vim-go :GoDef short cut (gd)
 " this is handled by LanguageClient [LC]
-let g:go_def_mapping_enabled = 0
+" let g:go_def_mapping_enabled = 0
 
 " format with goimports instead of gofmt
 let g:go_fmt_command = "goimports"

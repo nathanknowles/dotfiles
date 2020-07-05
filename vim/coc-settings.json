@@ -1,4 +1,7 @@
 {
+  "suggest": {
+    "autoTrigger": "trigger"
+  },
   "languageserver": {
     "golang": {
       "command": "gopls",
@@ -9,5 +12,8 @@
         "completeUnimported": true
       }
     }
-  }
+  },
+  "explorer.icon.enableNerdfont": true,
+  "explorer.icon.enableVimDevicons": true,
+  "explorer.debug": true
 }

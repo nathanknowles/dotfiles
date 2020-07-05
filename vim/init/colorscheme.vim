@@ -21,5 +21,5 @@ hi Function ctermfg=green
 " set background=dark
 " let g:quantum_black=1
 let g:quantum_italics=1
-let g:airline_theme='quantum'
-colorscheme quantify 
+let g:airline_theme='n8'
+colorscheme n8
