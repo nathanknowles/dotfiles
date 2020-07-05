@@ -30,7 +30,7 @@ cask 'fantastical'
 cask 'xquartz'
 cask 'paw'
 cask 'fork'
-cask 'kovidgoyal/kitty'
+cask 'kitty'
 
 brew 'skhd'
 brew 'yabai'
