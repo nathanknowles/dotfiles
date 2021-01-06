@@ -36,7 +36,7 @@ yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app="^App Store$" manage=off
 yabai -m rule --add app="^Activity Monitor$" manage=off
 yabai -m rule --add app="^Preview$" manage=off border=off
-# yabai -m rule --add app="^zoom.us$" manage=off
+yabai -m rule --add app="^zoom.us$" manage=off
 yabai -m rule --add app="^Kap$" manage=off
 yabai -m rule --add app="^YT Music$" display=^2 manage=off
 yabai -m rule --add app="^Music$" display=^2 manage=off
@@ -44,7 +44,6 @@ yabai -m rule --add app="Bitwarden" manage=off
 
 yabai -m rule --add app="^Safari$" space=^8
 yabai -m rule --add app="^Firefox$" space=^2
-yabai -m rule --add app="^zoom.us$" space=^3
 
 # yabai -m rule --add app="Godot" manage=off
 # yabai -m rule --add app="Figma" space=^4 manage=off

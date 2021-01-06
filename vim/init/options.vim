@@ -110,8 +110,8 @@
   set cursorline                       " Highlight current line
   set laststatus=2                     " Always show statusline
 
-  let g:python3_host_prog="/usr/bin/python3"
-  let g:python_host_prog="/usr/bin/python"
+  let g:python3_host_prog="/usr/local/bin/python3"
+  let g:python_host_prog="/usr/local/bin/python"
 
   if exists('+colorcolumn')
     hi ColorColumn guibg=#4b5263

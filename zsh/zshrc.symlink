@@ -1,13 +1,16 @@
-# export GOOGLE_APPLICATION_CREDENTIALS=$HOME/gcp-keys/gcp-dev-key.json
 export RUBY_LOC=/usr/local/lib/ruby
+export NVIM_PYTHON_LOG_FILE=$HOME/tmp/nvim_python.log
+export NVIM_PYTHON_LOG_LEVEL=DEBUG
 export TRAVIS_CLI=/usr/local/lib/ruby/gems/2.5.0/gems/travis-1.8.9/bin
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export ENV=nknowlesDev
+export GOPATH=$GOPATH:$HOME/git/leroy
 export EDITOR='vim'
 
+
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/sbin:/usr/local:/usr/local:$TRAVIS_CLI:$HOME/anaconda3/bin:$HOME/go/bin:$HOME/:$GOPATH:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local:/usr/local:$TRAVIS_CLI:$HOME/anaconda3/bin:$HOME/go/bin:$HOME/:$GOPATH:/usr/local/opt/openssl@1.1/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -106,6 +109,8 @@ alias reloadzsh="source ~/.zshrc"
 alias vi=nvim
 alias vim=nvim
 alias kubeapply="kubectl apply -f"
+
+alias gocover="go test -coverprofile=/tmp/coverage.out ./... && go tool cover -html=/tmp/coverage.out && rm /tmp/coverage.out"
 
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 

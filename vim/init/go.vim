@@ -42,6 +42,9 @@ let g:loaded_root = 1
 
 command! Root call root#FindRoot()
 
+autocmd FileType go nmap <Leader>t <Plug>(go-test)
+autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
+
 " if g:root#auto == 1
     " augroup root
         " au!

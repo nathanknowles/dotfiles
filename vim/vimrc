@@ -27,6 +27,7 @@ set rtp+=/usr/local/opt/fzf
 call vundle#rc()
 
 Plugin 'flrnd/candid.vim'
+Plugin 'voldikss/vim-floaterm'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'jaxbot/semantic-highlight.vim'
 Plugin 'vim-airline/vim-airline'
@@ -36,7 +37,7 @@ Plugin 'rainglow/vim'
 Plugin 'zxqfl/tabnine-vim'
 Plugin 'tobyS/vmustache'
 Plugin 'FooSoft/vim-argwrap'
-Plugin 'sheerun/vim-polyglot'
+" Plugin 'sheerun/vim-polyglot'
 Plugin 'gmarik/vundle'
 Plugin 'w0rp/ale'
 Plugin 'joshdick/onedark.vim'
@@ -61,6 +62,8 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'benmills/vimux'
 Plugin 'rizzatti/dash.vim'
+Plugin 'nvim-treesitter/nvim-treesitter'
+" Plugin 'datwaft/bubbly.nvim'
 
 " Snippets
 Plugin 'mattn/emmet-vim'
@@ -71,6 +74,8 @@ Plugin 'honza/vim-snippets'
 Plugin 'tobyS/pdv'
 
 Plugin 'fatih/vim-go'
+
+Plugin 'buoto/gotests-vim'
 
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -87,9 +92,6 @@ endif
 Plugin 'junegunn/fzf.vim'
 
 filetype plugin indent on
-
-let g:python2_host_prog = '/usr/bin/python'
-let g:python3_host_prog = '/usr/bin/python3'
 
 function! SynStack()
   if !exists("*synstack")

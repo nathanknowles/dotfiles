@@ -18,6 +18,23 @@ syn match pFunPara /\v(\=\s*)?\zs\h\i*\ze\s*[,)]/ contained
 hi pFunPara ctermfg=yellow
 hi Function ctermfg=green
 
+
+let g:bubbly_palette = #{
+\   background: "#3E313C",
+\   foreground: "#f6f6f4",
+\   black: "#3e4249",
+\   red: "#ec7279",
+\   green: "#a0c980",
+\   yellow: "#deb974",
+\   blue: "#6cb6eb",
+\   purple: "#d38aea",
+\   cyan: "#5dbbc1",
+\   white: "#c5cdd9",
+\   lightgrey: "#57595e",
+\   darkgrey: "#404247",
+\ }
+
+
 " set background=dark
 " let g:quantum_black=1
 let g:quantum_italics=1
